@@ -1,0 +1,156 @@
+
+/*carrusel*/
+
+.btncarousel{
+    background-color: black;
+}
+
+/*login*/
+
+.olvidar  a {
+  color:#0004ff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.olvidar a:hover{
+   color: black;
+   text-decoration: underline;
+   transform: scale(1.1);
+}
+
+.registro a{
+  color:#0004ff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.registro a:hover{
+    color: black;
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+.presion{
+    width: 100%;
+    height: 50px;
+    border-radius: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.registro{
+    margin: 25px 0 10px;
+}
+
+/* formulario de contacto*/
+
+form.contactanos{
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form.contactanos fieldset, form.contactanos legend{
+    background-color:#fff;
+    border: 2px solid #da2923;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+form.contactanos label, form.contactanos legend{
+    font-weight: bold;
+}
+
+form.contactanos select, form.contactanos textarea{
+    width: 90%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+form.contactanos input{
+    width: 90%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    
+}
+
+p{
+    font-size: 20px;
+    line-height: 20px;
+    color: #4a4a4a;
+}
+
+.parrafo h4{
+    font-weight: 800;
+    text-transform: capitalize;
+    color: #111;
+}
+
+/* promociones */ 
+
+.imagen{
+    max-width:100%;
+}
+
+a{
+    cursor:pointer;
+}
+.alerta{
+    font-weight:700;
+}
+body{
+    background-color:#E3D8D6;
+    overflow-x: hidden;
+}
+.modal-contenedor{
+    display:flex;
+    align-items: center;
+    gap:2rem;
+}
+.img-carrito{
+    width:200px;
+    padding:0px;
+} 
+.modal-content{
+    background-color: #E3D8D6;
+}
+
+#precioTotal{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+
+.mt-5{
+    justify-content: center;
+}
+
+.dess{
+	opacity:0;
+}
+
+.dass{
+    font-weight: 900;
+    font-style: italic;
+}
+
+.raw{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+.raw img{
+    width: 340px;
+    height: 350px;
+}
+
+

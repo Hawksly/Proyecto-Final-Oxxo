@@ -1,0 +1,12 @@
+hibernate\prueba.class
+model\Usuario.class
+controller\SvContacto.class
+model\contacto.class
+model\conexionsql.class
+model\Econtacto.class
+controller\UsuarioController.class
+utils\HibernateUtil.class
+dao\UsuarioDAO.class
+model\Econtacto_.class
+.netbeans_automatic_build
+dao\consultasdao.class
