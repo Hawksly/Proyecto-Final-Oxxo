@@ -8,5 +8,5 @@ controller\UsuarioController.class
 utils\HibernateUtil.class
 dao\UsuarioDAO.class
 model\Econtacto_.class
-.netbeans_automatic_build
+controller\SvLogin.class
 dao\consultasdao.class

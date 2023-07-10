@@ -15,6 +15,6 @@
         <h1>Hola Mundo desde html</h1>
         <% String hola = "Hola Mundo desde Java"; %>
         <%=hola %>
-        <a href="/proyectooxxo/Vista/inicio.php">Inicio</a>
+        <a href="/oxxo/Vista/inicio.php">Inicio</a>
     </body>
 </html>

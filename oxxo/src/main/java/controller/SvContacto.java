@@ -40,7 +40,6 @@ public class SvContacto extends HttpServlet {
         String tienda = request.getParameter("tienda");
         String comentario = request.getParameter("mensaje");
         /*Impresión de mensajes*/
-        try{
             System.out.println("motivo: "+motivo);
             System.out.println("nombre: "+nombre);
             System.out.println("apellido: "+apellido);
@@ -48,9 +47,7 @@ public class SvContacto extends HttpServlet {
             System.out.println("telefono: "+telefono);
             System.out.println("tienda: "+tienda);
             System.out.println("comentario: "+comentario);
-        }finally{
-            System.out.close();
-        }
+        /*Conexión a la base de datos*/
         conexionsql con = new conexionsql();
         try {
             Connection conexion = con.conectar();

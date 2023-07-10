@@ -8,34 +8,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
               integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="/oxxo/css/ingreso.css">
+        <link rel="stylesheet" href="/oxxo/css/style.css">
+        <link rel="stylesheet" href="/oxxo/css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <script src="/oxxo/js/jq/jquery-3.6.1.min.js"></script>
     </head>
     <body>
         <!-- Cabecera -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="width: 100%;height: 100px">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/oxxo/view/contacto.php"><img src="/oxxo/res/logo/oxxologo.png" class="align-text-top" width="150px" height="100px"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link">Disabled</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <header class="header sticky-top">
+        <div class="logo">
+            <img src="/oxxo/res/logo/oxxologo.png" class="rounded" alt="Logo de la marca">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/oxxo/Vista/inicio.php">Inicio</a></li>
+                <li><a href="/oxxo/Vista/about.php">Quiénes Somos</a></li>
+                <li><a href="/oxxo/Vista/promociones.php">Promociones</a></li>
+                <li><a href="/oxxo/Vista/contacto.php">Contáctanos</a></li>
+            </ul>
         </nav>
+        <a href="login.html" class="boton"><button>Login</button></a>
+        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+        <div class="overlay" id="mobile-menu">
+            <a onclick="closeNav()" href="" class="close">&times;</a>
+            <div class="overlay-content">
+                <a href="/oxxo/Vista/inicio.php">Inicio</a>
+                <a href="/oxxo/Vista/about.php">Quiénes Somos</a>
+                <a href="/oxxo/Vista/promociones.php">Promociones</a>
+                <a href="/oxxo/Vista/contacto.php">Contáctanos</a>
+            </div>
+        </div>
+    </header>
         <!-- Fin de Cabecera -->
         <div class="photo">
         <center>
