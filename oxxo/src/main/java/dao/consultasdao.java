@@ -7,7 +7,7 @@ import java.util.List;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
-import model.Econtacto;
+import model.contacto;
 import org.hibernate.Transaction;
 import utils.HibernateUtil;
 

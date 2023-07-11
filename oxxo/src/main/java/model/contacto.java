@@ -10,7 +10,7 @@ import javax.persistence.Id;
 
 @Entity
 @Table(name="oxxo")
-public class Econtacto implements Serializable {
+public class contacto implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
@@ -31,11 +31,11 @@ public class Econtacto implements Serializable {
     @Column (name="cliente_telefono")
     private int telefono;
 
-    public Econtacto() {
+    public contacto() {
         
     }
     
-    public Econtacto(String motivo, String nombre, String apellido, String correo, String tienda, String comentario, int telefono) {
+    public contacto(String motivo, String nombre, String apellido, String correo, String tienda, String comentario, int telefono) {
         this.motivo = motivo;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -121,10 +121,10 @@ public class Econtacto implements Serializable {
     @Override
     public boolean equals(Object object) {
         // TODO: Warning - this method won't work in the case the id fields are not set
-        if (!(object instanceof Econtacto)) {
+        if (!(object instanceof contacto)) {
             return false;
         }
-        Econtacto other = (Econtacto) object;
+        contacto other = (contacto) object;
         if ((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id))) {
             return false;
         }

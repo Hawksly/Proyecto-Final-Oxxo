@@ -39,6 +39,7 @@ public class SvContacto extends HttpServlet {
         String telefono = request.getParameter("telefono");
         String tienda = request.getParameter("tienda");
         String comentario = request.getParameter("mensaje");
+        Boolean verificacion = null;
         /*Impresión de mensajes*/
             System.out.println("motivo: "+motivo);
             System.out.println("nombre: "+nombre);
@@ -48,19 +49,24 @@ public class SvContacto extends HttpServlet {
             System.out.println("tienda: "+tienda);
             System.out.println("comentario: "+comentario);
         /*Conexión a la base de datos*/
-        conexionsql con = new conexionsql();
+        CRUD crud = new CRUD();
         try {
-            Connection conexion = con.conectar();
-            Statement st = conexion.createStatement();
-            String sql = "INSERT INTO consulta (motivo, cliente_nombre, cliente_apellido, cliente_correo, cliente_telefono, tienda, comentario) "
-                + "VALUES ('"+motivo+"','"+nombre+"','"+apellido+"','"+correo+"',"+telefono+",'"+tienda+"','"+comentario+"')";
-            st.execute(sql);
-            st.close();
-            conexion.close();
+            crud.INSERT(motivo, nombre, apellido, correo, 0, tienda, comentario);
             System.out.println("El registro se guardó correctamente.");
-        } catch (SQLException e) {
+            verificacion = true;
+        } catch (Exception e) {
             System.out.println("El registro no se guardó "+e);
+            verificacion = false;
     }
+        try {
+            if (verificacion.equals(true)) {
+                 response.sendRedirect("/oxxo/view/inicio.php");
+            }else{
+                 response.sendRedirect("/oxxo/contacto.jsp");
+            }
+        } catch (Exception e) {
+            System.out.println("Error en la verificación del registro: "+e);
+        }
         
     }
 
